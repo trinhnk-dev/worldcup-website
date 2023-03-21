@@ -1,0 +1,71 @@
+<div id="content-table" class="row row-cols-4 g-4 card-background">
+  <% players.forEach(function(player){%>
+  <div class="col-sm-4">
+    <div class="card">
+      <a class="card-modal" href="/players/details/<%= player._id%>">
+        <img src="<%=player.image %>" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h1><%= player.name %></h1>
+          <div class="content-player">
+            <p class="card-text"><%= player.club%></p>
+            <p class="img-nation"><% if(player.nation){%>
+              <img src="<%=player.nation.image%>" alt=""
+                  class="player-nation">
+              <%}%></p>
+          </div>
+          
+        </div>
+      </a>
+      
+      <div class="buttons button-option">
+        <div class="dropdown">
+          <button
+            class="btn"
+            type="button"
+            style="background-color: #d62828; color: #f1faee"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-three-dots"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+              />
+            </svg>
+          </button>
+          <ul
+            class="dropdown-menu"
+            aria-labelledby="dropdownMenuButton1"
+          >
+            
+            <li>
+              <a
+                class="btn edit-btn"
+                href="/players/edit/<%= player._id%>"
+                >Edit</a
+              >
+            </li>
+            <li>
+              <a
+                class="btn delete-btn"
+                onclick="deleteFunction('<%=player._id%>')"
+                >Delete
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <%})%>
+</div>

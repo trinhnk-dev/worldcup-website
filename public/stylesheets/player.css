@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-brand img {
+    max-width: 100px;
+    max-height: 50px;
+  }
+
+.nav-link {
+    font-size: 1.25rem;
+}
+
+.nav-link.active p{
+    color: #d62828;
+    margin: 0;
+    font-weight: 600;
+}
+
+.bg-img {
+    height: 100vh;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.container .row h1 {
+    font-weight: 700;
+    font-size: 30px;
+    position: relative;
+}
+
+.detail-content{
+    min-height: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    
+}
+
+.container .row {
+    min-height: 500px;
+    width: 100%;
+    display: flex;
+    margin: 0;
+}
+
+.card-background{
+    background-image: url("https://wallpaperaccess.com/full/1670773.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 30px;
+}
+.container{
+    z-index: 1;
+    position: relative;
+}
+table{
+    left: 0;
+    margin-right: 200px;
+    margin-top: 30px;
+}
+table img{
+max-width: 64px;
+max-height: 128px;
+}
+table tbody{
+    color: white;
+}
+table thead{
+    color: white;
+}
+.box{
+    background-color: white;
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+.errMsg{
+    color: red;
+    z-index: 9999;
+}
+.buttons{
+    z-index: 5;
+}
+
+.detail-btn{
+    text-align: left;
+    width: 100%;
+    
+}
+.edit-btn{
+    text-align: left;
+    width: 100%;
+}
+.delete-btn{
+    text-align: left;
+    width: 100%;
+}
+.detail-btn:hover{
+    width: 100%;
+    background-color: #198754;
+    color: white;
+    text-align: left;
+}
+.edit-btn:hover {
+    width: 100%;
+    background-color: #FFC107;
+    color: black;
+    text-align: left;
+}
+.delete-btn:hover {
+    width: 100%;
+    background-color: #DC3545;
+    color: white;
+    text-align: left;
+}
+
+.box-view{
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    max-height: 680px;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+.box-view .img-detail{
+    max-width: 256px;
+    max-height: 256px;
+}
+.box-view .text{
+    font-size: 1.5rem;
+}
+.box-view .buttons{
+    float: right;
+}
+.modal-backdrop{
+    --bs-backdrop-zindex: unset !important;
+    --bs-backdrop-bg: unset !important;
+}
+.rounded.nation {
+    max-width: 128px;
+    max-height: 64px;
+}
+.alert {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 624px;
+    margin-right: 20px;
+}
+.back{
+    display: inline;
+}
+
+.list-player{
+    padding-top: 100px;
+    margin: auto;
+}
+
+.list-player-content{
+    width: 100%;
+}
+
+.list-player-item{
+    margin: 0px 20px;
+}
+
+.card img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+.btn-common-footer{
+    width: 100%;
+    height: 50px;
+    background-color: #d62828;
+    color: #f1faee;
+}
+
+.btn-common-footer:hover{
+    background-color: #d62828;
+    color: #f1faee;
+    opacity: 0.75;
+}
+
+.button-option{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.card{
+    position: relative;
+
+}
+
+.alert {
+    z-index: 999;
+}
+
+.create-content{
+    z-index: 9999;
+}
+
+.content-player{
+    display: flex;
+    align-items: center;
+}
+
+.card-text{
+    width: 70%;
+    font-size: 20px;
+}
+
+.img-nation{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.img-nation img{
+    width: 50%;
+    height: 50px;
+}
+
+.card-modal{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s
+}
+
+.card-modal:hover{
+    opacity: 0.75;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s
+}
+
+.detail-top{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    
+}
+
+.detail-top img{
+    border-radius: 10px;
+}
+
+.detail-bottom{
+    padding: 30px 0px;
+}
+
+.detail-top img{
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+
+  .card-listUser{
+    justify-content: space-around;
+    background-image: url("https://wallpaperaccess.com/full/1670773.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 30px;
+  }
+  
+.edit-player{
+    justify-content: space-around;
+    background-image: url("https://wallpaperaccess.com/full/1670773.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-bottom: 30px;
+}
+
+.bg-detail{
+    justify-content: space-around;
+    background-image: url("https://wallpaperaccess.com/full/1670773.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-bottom: 30px;
+}
+
+.editNation{
+    justify-content: space-around;
+    background-image: url("https://wallpaperaccess.com/full/1670773.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.account{
+    justify-content: space-around;
+    background-image: url("https://wallpaperaccess.com/full/1670773.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-bottom: 30px;
+}
+
+.editAccount{
+    justify-content: space-around;
+    background-image: url("https://wallpaperaccess.com/full/1670773.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.signIn-button{
+    background-color: #d62828;
+    color: white;
+  }
+  
+  .signIn-button:hover{
+    opacity: 0.75;
+    background-color: #d62828;
+    color: white;
+  }
+  
+  .logout-button{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+  }
+  
+  .logout-button:hover{
+    background-color: #d62828;
+    color: white;
+    opacity: 0.75;
+  }

@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-img {
+    height: 100vh;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.bg-img.overlay::before {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.container {
+    z-index: 1;
+    position: relative;
+}
+.container .row {
+    height: 100vh;
+    min-height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.container .row h3 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    position: relative;
+    margin-top: 10%;
+    color: #001219;
+}
+.box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 500px;
+}
+.choose-form{
+    display: flex;
+}
+.choose-form .active{
+    background-color: #d62828;
+    color: #f1faee !important;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+.choose-form .btn-link{
+    text-decoration: none;
+        padding: 5px 10px;
+}
+.choose-form .btn-link a{
+    text-decoration: none;
+    color: unset;
+}
+.alert-group{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 624px;
+    margin-right: 20px;
+}
+
+.button-home{
+    width: 20%;
+    padding-top: 50px;
+
+}
+
+.backToHomeButton{
+    background-color: #d62828;
+    color: #f1faee;
+}
+
+.backToHomeButton:hover{
+    opacity: 0.75;
+    background-color: #d62828;
+    color: #f1faee;
+}
+
+.form{
+    width: 60%;
+    
+}
+
+.btn-common-footer{
+    width: 100%;
+    height: 50px;
+    background-color: #d62828;
+    color: #f1faee;
+}
+
+.btn-common-footer:hover{
+    background-color: #d62828;
+    color: #f1faee;
+    opacity: 0.75;
+}
+
+.link-button{
+    color: #d62828;
+}
+
+.link-button:hover{
+    opacity: 0.75;
+    color: #d62828;
+
+}
+
+.navbar-brand img {
+    max-width: 100px;
+    max-height: 50px;
+  }
+
+  .signIn-button{
+    background-color: #d62828;
+    color: white;
+  }
+  
+  .signIn-button:hover{
+    opacity: 0.75;
+    background-color: #d62828;
+    color: white;
+  }
+  
+  .logout-button{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+  }
+  
+  .logout-button:hover{
+    background-color: #d62828;
+    color: white;
+    opacity: 0.75;
+  }
+
